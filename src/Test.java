@@ -36,6 +36,7 @@ public class Test {
         System.out.println("40分钟过后");
         u.walkStop();
 
+        System.out.println(u.getName() + "hello");
 
 
 
