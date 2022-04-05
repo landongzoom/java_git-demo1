@@ -6,5 +6,10 @@ public class Test {
         u.begin();
         System.out.println("过了15分钟~");
         u.stop();
+
+        System.out.println("======过了2小时之后======");
+        u.runBegin();
+        System.out.println("跑了15分钟");
+        u.runStop();
     }
 }
