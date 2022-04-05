@@ -14,15 +14,14 @@ public class Test {
         u.runStop();
 
 
-
         System.out.println();
         System.out.println();
         System.out.println();
 
 
-        if(time % 2 == 0){
+        if (time % 2 == 0) {
             playComputer(u);
-        }else{
+        } else {
             playPhone(u);
         }
 
@@ -37,7 +36,11 @@ public class Test {
         System.out.println("40分钟过后");
         u.walkStop();
 
-    }
+
+
+
+}
+
 
     private static void playPhone(User u) {
         System.out.println(u.getName() + "去玩会电脑~");
@@ -45,6 +48,8 @@ public class Test {
 
     private static void playComputer(User u) {
         System.out.println(u.getName() + "去玩会手机~");
+
+
 
     }
 }
