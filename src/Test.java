@@ -12,7 +12,11 @@ public class Test {
         System.out.println("跑了15分钟");
         u.runStop();
 
-        int count = 3;
-        System.out.println(count);
+
+        int count1 = 3;
+        int count2 = 4;
+
+        System.out.println(count1);
+        System.out.println(count2);
     }
 }
