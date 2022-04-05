@@ -1,4 +1,5 @@
 public class Test {
+    private static long time = System.currentTimeMillis();
     public static void main(String[] args) {
         User u = new User();
         u.setName("小白");
@@ -14,5 +15,23 @@ public class Test {
 
         int count = 3;
         System.out.println(count);
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        if(time % 2 == 0){
+            playComputer(u);
+        }else{
+            playPhone(u);
+        }
+    }
+
+    private static void playPhone(User u) {
+        System.out.println(u.getName() + "去玩会电脑~");
+    }
+
+    private static void playComputer(User u) {
+        System.out.println(u.getName() + "去玩会手机~");
     }
 }
