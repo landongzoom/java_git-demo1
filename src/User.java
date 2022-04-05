@@ -1,4 +1,4 @@
-public class User implements Eat,Run{
+public class User implements Eat,Run,Walk{
     @Override
     public void begin() {
         System.out.println(getName() + "开始食用美食~~");
@@ -17,6 +17,16 @@ public class User implements Eat,Run{
     @Override
     public void runStop() {
         System.out.println(getName() + "跑步停止，今天运动已达标~~");
+    }
+
+    @Override
+    public void walkBegin() {
+        System.out.println(getName() + "开始散步");
+    }
+
+    @Override
+    public void walkStop() {
+        System.out.println(getName() + "结束散步，并踩了一朵小红花");
     }
 
     private String name;

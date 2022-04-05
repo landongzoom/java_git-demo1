@@ -20,6 +20,7 @@ public class Test {
         System.out.println();
         System.out.println();
 
+
         if(time % 2 == 0){
             playComputer(u);
         }else{
@@ -33,5 +34,16 @@ public class Test {
 
     private static void playComputer(User u) {
         System.out.println(u.getName() + "去玩会手机~");
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+        // 做一个接口
+        u.walkBegin();
+        System.out.println("40分钟过后");
+        u.walkStop();
+
     }
 }
