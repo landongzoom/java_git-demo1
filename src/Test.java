@@ -13,8 +13,7 @@ public class Test {
         System.out.println("跑了15分钟");
         u.runStop();
 
-        int count = 3;
-        System.out.println(count);
+
 
         System.out.println();
         System.out.println();
@@ -26,6 +25,18 @@ public class Test {
         }else{
             playPhone(u);
         }
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
+
+        // 做一个接口
+        u.walkBegin();
+        System.out.println("40分钟过后");
+        u.walkStop();
+
     }
 
     private static void playPhone(User u) {
@@ -34,16 +45,6 @@ public class Test {
 
     private static void playComputer(User u) {
         System.out.println(u.getName() + "去玩会手机~");
-
-
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
-        // 做一个接口
-        u.walkBegin();
-        System.out.println("40分钟过后");
-        u.walkStop();
 
     }
 }
