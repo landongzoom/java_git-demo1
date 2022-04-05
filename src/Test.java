@@ -26,14 +26,7 @@ public class Test {
         }else{
             playPhone(u);
         }
-    }
 
-    private static void playPhone(User u) {
-        System.out.println(u.getName() + "去玩会电脑~");
-    }
-
-    private static void playComputer(User u) {
-        System.out.println(u.getName() + "去玩会手机~");
 
 
         System.out.println();
@@ -44,6 +37,16 @@ public class Test {
         u.walkBegin();
         System.out.println("40分钟过后");
         u.walkStop();
+    }
+
+    private static void playPhone(User u) {
+        System.out.println(u.getName() + "去玩会电脑~");
+    }
+
+    private static void playComputer(User u) {
+        System.out.println(u.getName() + "去玩会手机~");
+
+
 
     }
 }
