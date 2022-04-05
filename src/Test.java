@@ -11,5 +11,8 @@ public class Test {
         u.runBegin();
         System.out.println("跑了15分钟");
         u.runStop();
+
+        int count = 3;
+        System.out.println(count);
     }
 }
